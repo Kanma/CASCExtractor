@@ -88,8 +88,7 @@ void showUsage(const std::string& strApplicationName)
          << endl
          << "       ./CASCExtractor -o out \"/Applications/World of Warcraft Beta/Data/\" \"Path\\To\\The\\File\"" << endl
          << endl
-         << "  3) Extract some specific files from a CASC storage, preserving the path hierarchy" << endl
-         << "     found inside the MPQ archive:" << endl
+         << "  3) Extract some specific files from a CASC storage, preserving the path hierarchy:" << endl
          << endl
          << "       ./CASCExtractor -f -o out -l listfile-wow6.txt \"/Applications/World of Warcraft Beta/Data/\" \"Path\\To\\Extract\\*\"" << endl
          << endl;
