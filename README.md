@@ -71,7 +71,7 @@ to try to interpret the backslashes (\\) as the start of an escape sequence, whi
 result in invalid file names.
 
     $ mkdir out
-    $ MPQExtractor -o out "/Applications/World of Warcraft Beta/Data/" "Cameras\Abyssal_Maw_CameraFly_01.M2"
+    $ CASCExtractor -o out "/Applications/World of Warcraft Beta/Data/" "Cameras\Abyssal_Maw_CameraFly_01.M2"
     Opening '/Applications/World of Warcraft Beta/Data'...
 
     Extracting files...
@@ -80,11 +80,10 @@ result in invalid file names.
     Abyssal_Maw_CameraFly_01.M2
 
 
-**Extract some specific files from a CASC storage, preserving the path hierarchy found
-inside the MPQ archive:**
+**Extract some specific files from a CASC storage, preserving the path hierarchy:**
 
     $ mkdir out
-    $ MPQExtractor -f -o out "/Applications/World of Warcraft Beta/Data/" "Cameras\FlyBy_*.M2"
+    $ CASCExtractor -f -o out "/Applications/World of Warcraft Beta/Data/" "Cameras\FlyBy_*.M2"
     Opening '/Applications/World of Warcraft Beta/Data'...
 
     Searching for 'Cameras\FlyBy_*.M2'...
